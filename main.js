@@ -10,4 +10,13 @@ fetch('http://localhost:3000/Philosophers')
     const submitBtn = document.getElementById('submission');
     const PhilosopherInfo = document.getElementById('philosopherInfo');
 
+    culture.addEventListener('change', function(e) {
+        if(culture.value === 'Ancient Greece' || culture.value === 'Ancient Egypt' || culture.value === 'Ancient China' || culture.value === 'Ancient India') {
+            PhilosopherInput.disabled = false;
+            submitBtn.disabled = false;
+    } else {
+        PhilosopherInput.disabled = true;
+        submitBtn.disabled = true;
+    }
+})
 })

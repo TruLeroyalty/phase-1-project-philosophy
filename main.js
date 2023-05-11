@@ -54,6 +54,10 @@ form.addEventListener('submit', function(e) {
 
     const selectedPhilosopher = philosopherInput.value;
     const selectedPerson = data.find(person => person.name === selectedPhilosopher);
+
+    if(selectedPerson) {
+        displayPhilosopherInfo(selectedPerson);
+    };
 });
 
 function displayPhilosopherInfo(philosopher) {

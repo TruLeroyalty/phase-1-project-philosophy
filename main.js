@@ -28,7 +28,18 @@ function filterPeopleByCulture(selectedCulture, philosopherData) {
     const filteredPeople = philosopherData.filter(function(philosopher) {
         return philosopher.culture === selectedCulture;
     });
-
 }
+
+function appendPeopleOptions(people) {
+    people.forEach(function(person) {
+        const option = document.createElement('option')
+        option.text=person.name;
+        philosopherInput.addEventListener(option);
+    });
+}
+        
+    });
+
+
 });
 

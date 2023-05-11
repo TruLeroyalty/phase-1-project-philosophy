@@ -36,10 +36,11 @@ function appendPeopleOptions(people) {
         option.text=person.name;
         philosopherInput.addEventListener(option);
     });
-}
-        
-    });
+};
 
+function clearPeopleOptions() {
+    philosopherInput.innerHTML = "";
+}
 
 });
 

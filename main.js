@@ -16,9 +16,11 @@ fetch('http://localhost:3000/Philosophers')
         if(culture.value === 'Ancient Greece' || culture.value === 'Ancient Egypt' || culture.value === 'Ancient China' || culture.value === 'Ancient India') {
             philosopherInput.disabled = false;
             submitBtn.disabled = false;
+            filterPeopleByCulture(culture.value, data);
     } else {
         philosopherInput.disabled = true;
         submitBtn.disabled = true;
+       
     }
 })
 
@@ -28,13 +30,16 @@ function filterPeopleByCulture(selectedCulture, philosopherData) {
     const filteredPeople = philosopherData.filter(function(philosopher) {
         return philosopher.culture === selectedCulture;
     });
+
+    clearPeopleOptions();
+    appendPeopleOptions(filteredPeople);
 }
 
 function appendPeopleOptions(people) {
     people.forEach(function(person) {
         const option = document.createElement('option')
         option.text=person.name;
-        philosopherInput.addEventListener(option);
+        philosopherInput.add(option);
     });
 };
 

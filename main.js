@@ -35,6 +35,8 @@ function filterPeopleByCulture(selectedCulture, philosopherData) {
     appendPeopleOptions(filteredPeople);
 }
 
+        // Will append the philosopher to the drop-down list options after culture is selected.
+
 function appendPeopleOptions(people) {
     people.forEach(function(person) {
         const option = document.createElement('option')
@@ -46,6 +48,13 @@ function appendPeopleOptions(people) {
 function clearPeopleOptions() {
     philosopherInput.innerHTML = "";
 }
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const selectedPhilosopher = philosopherInput.value;
+    const selectedPerson = data.find(person => person.name === selectedPhilosopher);
+});
 
 });
 

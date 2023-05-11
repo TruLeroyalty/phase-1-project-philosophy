@@ -56,5 +56,14 @@ form.addEventListener('submit', function(e) {
     const selectedPerson = data.find(person => person.name === selectedPhilosopher);
 });
 
+function displayPhilosopherInfo(philosopher) {
+    const info =`
+    <div id="personal">
+    <h2>${philosopher.name}</h2>
+</div>
+;`
+}
+
+
 });
 

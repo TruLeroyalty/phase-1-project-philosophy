@@ -10,3 +10,11 @@ html {
     width:100%;
     font-family:"Titillium Web", sans-serif;
 }
+
+button {
+    font-size:5px;
+}
+p {
+    font-size:large;
+    color:rgb(205,230,255);
+}

@@ -20,6 +20,7 @@ fetch('http://localhost:3000/Philosophers')
     } else {
         philosopherInput.disabled = true;
         submitBtn.disabled = true;
+        clearPeopleOptions(philosopherInfo);
        
     }
 })
@@ -31,16 +32,16 @@ function filterPeopleByCulture(selectedCulture, philosopherData) {
         return philosopher.culture === selectedCulture;
     });
 
-    clearPeopleOptions();
-    appendPeopleOptions(filteredPeople);
+    clearPeopleOptions(philosopherInput);
+    appendPeopleOptions(filteredPeople,philosopherInput);
 }
 
         // Will append the philosopher to the drop-down list options after culture is selected.
 
-function appendPeopleOptions(people) {
+function appendPeopleOptions(people,element) {
     people.forEach(function(person) {
         const option = document.createElement('option')
-        option.texContent=person.name;
+        option.textContent=person.name;
         philosopherInput.add(option);
     });
 };

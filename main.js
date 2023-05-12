@@ -66,31 +66,9 @@ form.addEventListener('submit', function(e) {
 
 function displayPhilosopherInfo(philosopher) {
     
-
-
-    const heading = document.createElement('h2');
-   heading.textContent = philosopher.name;
-   philName.appendChild(heading);
-
-   const statue = document.createElement('img');
-   statue.src = philosopher.image;
-   statuePicture.appendChild(statue); 
-
-   const quote = document.createElement('p');
-const strong = document.createElement('strong');
-strong.textContent = "Famous Quote: ";
-quote.appendChild(strong);
-quote.appendChild(document.createTextNode(philosopher.quote));
-famousQuote.appendChild(quote);
-   
-  
-   
-
-
-
-
-
+    const infoContainer = document.createElement('div');
+    infoContainer.id = 'personal';
+    
 };
 }
-
-})
+)

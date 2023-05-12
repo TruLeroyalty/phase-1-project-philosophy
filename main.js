@@ -113,6 +113,18 @@ function displayPhilosopherInfo(philosopher) {
       return factParagraph;
     };
 
+    factsContainer.appendChild(createFactParagraph('Fact1', philosopher.fact1));
+    factsContainer.appendChild(createFactParagraph('Fact2', philosopher.fact2));
+    factsContainer.appendChild(createFactParagraph('Fact3', philosopher.fact3));
+    factsContainer.appendChild(createFactParagraph('Fact4', philosopher.fact4));
+    factsContainer.appendChild(createFactParagraph('Fact5', philosopher.fact5));
+  
+    infoContainer.appendChild(factsContainer);
+  
+    philosopherInfo.textContent = '';
+    philosopherInfo.appendChild(infoContainer);
+  }
+
 };
 }
 })

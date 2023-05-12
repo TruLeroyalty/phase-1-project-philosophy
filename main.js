@@ -107,6 +107,11 @@ function displayPhilosopherInfo(philosopher) {
         factLabel.className = 'bigFacts';
         factLabel.textContent = factId + ': ';
         factParagraph.appendChild(factLabel);
+        const factTextContent = document.createTextNode(factText);
+      factParagraph.appendChild(factTextContent);
+  
+      return factParagraph;
+    };
 
 };
 }

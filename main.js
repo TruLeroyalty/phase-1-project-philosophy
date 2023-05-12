@@ -68,7 +68,10 @@ function displayPhilosopherInfo(philosopher) {
     
     const infoContainer = document.createElement('div');
     infoContainer.id = 'personal';
-    
+
+    const heading = document.createElement('h2');
+    heading.textContent = philosopher.name;
+    infoContainer.appendChild(heading);
 };
 }
 )

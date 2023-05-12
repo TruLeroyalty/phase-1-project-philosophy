@@ -79,6 +79,12 @@ function displayPhilosopherInfo(philosopher) {
     statueLabel.textContent = 'Statue: ';
     statueContainer.appendChild(statueLabel);
 
+    const statueImage = document.createElement('img');
+    statueImage.src = philosopher.image;
+    statueContainer.appendChild(statueImage);
+  
+    infoContainer.appendChild(statueContainer);
+
 
 };
 }

@@ -100,6 +100,14 @@ function displayPhilosopherInfo(philosopher) {
     factsContainer.id = 'facts';
     factsContainer.className = 'bigFacts';
 
+    const createFactParagraph = (factId, factText) => {
+        const factParagraph = document.createElement('p');
+        const factLabel = document.createElement('strong');
+        factLabel.id = factId;
+        factLabel.className = 'bigFacts';
+        factLabel.textContent = factId + ': ';
+        factParagraph.appendChild(factLabel);
+
 };
 }
 })

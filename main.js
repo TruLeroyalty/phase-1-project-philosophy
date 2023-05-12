@@ -8,7 +8,7 @@ fetch('http://localhost:3000/Philosophers')
     const culture = document.getElementById('cultureSelect');
     const philosopherInput = document.getElementById('pname');
     const submitBtn = document.getElementById('submission');
-    const PhilosopherInfo = document.getElementById('philosopherInfo');
+    const philosopherInfo = document.getElementById('philosopherInfo');
 
     //Disables the Submit button and Philosopher drop-down unless you pick a culture first. 
 
@@ -61,13 +61,9 @@ form.addEventListener('submit', function(e) {
 });
 
 function displayPhilosopherInfo(philosopher) {
-    const info =`
-    <div id="personal">
-    <h2>${philosopher.name}</h2>
-</div>
-;`
-}
-
-
-});
-
+    
+    const heading = document.createElement('h2');
+   heading.textContent = philosopher.name;
+   philosopherInfo.appendChild(heading);
+      };
+})

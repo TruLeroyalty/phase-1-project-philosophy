@@ -40,13 +40,14 @@ function filterPeopleByCulture(selectedCulture, philosopherData) {
 function appendPeopleOptions(people) {
     people.forEach(function(person) {
         const option = document.createElement('option')
-        option.text=person.name;
+        option.texContent=person.name;
         philosopherInput.add(option);
     });
 };
 
-function clearPeopleOptions() {
-    philosopherInput.innerHTML = "";
+function clearPeopleOptions(element) {
+    while(element.firstChild) {
+        element.firstChild.remove();
 }
 
 form.addEventListener('submit', function(e) {
@@ -61,7 +62,7 @@ form.addEventListener('submit', function(e) {
 });
 
 function displayPhilosopherInfo(philosopher) {
-    
+
     const heading = document.createElement('h2');
    heading.textContent = philosopher.name;
    philosopherInfo.appendChild(heading);

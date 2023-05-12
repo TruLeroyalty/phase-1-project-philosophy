@@ -72,6 +72,14 @@ function displayPhilosopherInfo(philosopher) {
     const heading = document.createElement('h2');
     heading.textContent = philosopher.name;
     infoContainer.appendChild(heading);
+
+    const statueContainer = document.createElement('p');
+    const statueLabel = document.createElement('strong');
+    statueLabel.id = 'statue';
+    statueLabel.textContent = 'Statue: ';
+    statueContainer.appendChild(statueLabel);
+
+
 };
 }
-)
+})

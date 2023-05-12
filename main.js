@@ -96,6 +96,9 @@ function displayPhilosopherInfo(philosopher) {
   
     infoContainer.appendChild(quoteContainer);
 
+    const factsContainer = document.createElement('div');
+    factsContainer.id = 'facts';
+    factsContainer.className = 'bigFacts';
 
 };
 }

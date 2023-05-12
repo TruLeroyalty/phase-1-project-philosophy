@@ -91,6 +91,11 @@ function displayPhilosopherInfo(philosopher) {
     quoteLabel.textContent = 'Famous Quote: ';
     quoteContainer.appendChild(quoteLabel);
 
+    const quoteText = document.createTextNode(philosopher.quote);
+    quoteContainer.appendChild(quoteText);
+  
+    infoContainer.appendChild(quoteContainer);
+
 
 };
 }

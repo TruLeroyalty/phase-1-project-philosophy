@@ -6,11 +6,11 @@
         "image": "https://i.ibb.co/bFspqKb/Socrates.jpg",
         "culture": "Ancient Greece",
         "quote": "'An unexamined life is not worth living.'",
-        "fact1": "1.Socrates never wrote any philosophical texts himself, and his ideas are primarily known through the writings of his student, Plato.",
+        "fact1": "Socrates never wrote any philosophical texts himself, and his ideas are primarily known through the writings of his student, Plato.",
         "fact2": "He is famous for his Socratic Method, a method of inquiry that involves questioning to stimulate critical thinking and to expose the contradictions in one's beliefs.",
         "fact3": "Socrates challenged conventional wisdom and the authority of the state, which led to his trial and subsequent execution by drinking hemlock in 399 BCE",
         "fact4": "He emphasized the importance of self-knowledge and moral integrity.",
-        "fact5": "Socrates'teachings had a profound influence on Western philosophy,ethics, and the development of logical reasoning."
+        "fact5": "His teachings had a profound influence on Western philosophy,ethics, and the development of logical reasoning."
     },
     {
         "id": 2,
@@ -76,7 +76,7 @@
         "id": 7,
         "name": "Gautama Buddha",
         "image": "https://i.ibb.co/LrmfKF4/Gautama-Buddha.jpg",
-        "culture": "Ancient Indian",
+        "culture": "Ancient India",
         "quote": "'Peace comes from within. Do not seek it without.'",
         "fact1": "Gautama Buddha, also known as Siddhartha Gautama, was the founder of Buddhism.",
         "fact2": "He renounced his princely life and embarked on a spiritual quest, seeking enlightenment and liberation from suffering.",
@@ -88,7 +88,7 @@
         "id": 8,
         "name": "Adi Shankara",
         "image": "https://i.ibb.co/zZsg8HK/Adi-Shankara.webp",
-        "culture": "Ancient Indian",
+        "culture": "Ancient India",
         "quote": "'Brahma Satyam Jagat Mithya' - ('Brahman is real, the world is an illusion').",
         "fact1": "Adi Shankara was a philosopher and theologian who played a crucial role in the revival of Hinduism and the Advaita Vedanta school of thought.",
         "fact2": "He is known for his commentaries on the Upanishads, the Bhagavad Gita, and the Brahma Sutras.",

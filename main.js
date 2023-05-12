@@ -76,8 +76,12 @@ function displayPhilosopherInfo(philosopher) {
    statue.src = philosopher.image;
    statuePicture.appendChild(statue); 
 
-   
-
+   const quote = document.createElement('p');
+const strong = document.createElement('strong');
+strong.textContent = "Famous Quote: ";
+quote.appendChild(strong);
+quote.appendChild(document.createTextNode(philosopher.quote));
+famousQuote.appendChild(quote);
    
   
    

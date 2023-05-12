@@ -58,6 +58,8 @@ form.addEventListener('submit', function(e) {
 
     if(selectedPerson) {
         displayPhilosopherInfo(selectedPerson);
+    } else {
+        clearPeopleOptions(philosopherInfo)
     };
 });
 
@@ -67,4 +69,6 @@ function displayPhilosopherInfo(philosopher) {
    heading.textContent = philosopher.name;
    philosopherInfo.appendChild(heading);
       };
+}
+
 })

@@ -85,6 +85,12 @@ function displayPhilosopherInfo(philosopher) {
   
     infoContainer.appendChild(statueContainer);
 
+    const quoteContainer = document.createElement('p');
+    const quoteLabel = document.createElement('strong');
+    quoteLabel.id = 'quote';
+    quoteLabel.textContent = 'Famous Quote: ';
+    quoteContainer.appendChild(quoteLabel);
+
 
 };
 }

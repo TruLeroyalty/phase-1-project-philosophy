@@ -71,16 +71,17 @@ function displayPhilosopherInfo(philosopher) {
 
     const heading = document.createElement('h2');
     heading.textContent = philosopher.name;
+    heading.id = 'nameOfPhil';
     infoContainer.appendChild(heading);
 
     const statueContainer = document.createElement('p');
     const statueLabel = document.createElement('strong');
     statueLabel.id = 'statue';
-    statueLabel.textContent = 'Statue: ';
     statueContainer.appendChild(statueLabel);
 
     const statueImage = document.createElement('img');
     statueImage.src = philosopher.image;
+    statueImage.id='statuePicture';
     statueContainer.appendChild(statueImage);
   
     infoContainer.appendChild(statueContainer);

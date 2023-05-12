@@ -2,13 +2,14 @@ body {
     background:linear-gradient(rgb(59,44,41), rgb(0,0,0));
     min-height: 100%;
     min-width: 100%; 
+    font-family:Arial;
 }
 
 html {
     background-color:black;
     height:100%;
     width:100%;
-    font-family:"Titillium Web", sans-serif;
+    font-family:"Titillium Web", Arial;
 }
 
 button {
@@ -17,4 +18,84 @@ button {
 p {
     font-size:large;
     color:rgb(205,230,255);
+    font-family:Arial;
+}
+
+#heading {
+color:rgb(205,230,255);
+font-family:Arial;
+margin-left: 55px;
+text-shadow: 3px 4px 5px rgb(154, 197, 188);
+
+
+}
+#welcome {
+color:rgb(205,230,255);
+font-family:Arial;
+text-shadow: 3px 4px 5px rgb(154, 197, 188);
+}
+
+#pname {
+font-weight:bold;
+font-family:Arial;
+
+}
+
+#cultureSelect {
+font-weight:bold;
+font-family:Arial;
+
+}
+
+#submission {
+font-weight:bold;
+font-family:Arial;
+margin-top:30px;
+height:40px;
+width:80px;
+}
+
+#submission:hover {
+    opacity:0.8;
+    transition-duration: 0.4s;
+}
+
+#submission:active {
+    opacity:0.2;
+}
+
+#cultures {
+    color:rgb(205,230,255);
+        font-weight:bold;
+        font-family:Arial;
+        text-shadow: 2px 2px 5px black;
+}
+
+#phils {
+    color:rgb(205,230,255);
+        font-weight:bold;
+        font-family:Arial;
+        margin-left:-13px;
+        
+}
+
+#nameOfPhil {
+    color:rgb(205,230,255);
+        font-weight:bold;
+        font-family:Arial;
+        display: block;
+        text-decoration:underline;
+        
+        
+}
+
+
+
+#statuePicture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:295px;
+    height: 375px;
+    
 }

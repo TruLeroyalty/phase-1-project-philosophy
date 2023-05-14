@@ -1,2 +1,2 @@
 # phase-1-project-philosophy
-It is an opportunity to look up and read about your favorite philosopher's famous quotes/culture/etc. Also can browse around ones you do not know.
+It is an opportunity to choose a Philosopher from the list of cultures to see their statue, a famouse quote from them, and 5 interesting facts about them.
